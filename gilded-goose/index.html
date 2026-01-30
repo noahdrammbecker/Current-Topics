@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gilded Goose</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="A brass door. A whispered word. Step inside.">
+</head>
+<body>
+    <div class="gate-container">
+        <div class="gate-door">
+            <div class="gate-peephole"></div>
+
+            <p class="gate-title">Dael City, 1932</p>
+
+            <div class="deco-line">
+                <span class="deco-diamond"></span>
+            </div>
+
+            <p class="gate-prompt">"The barber sent you, did he?"</p>
+
+            <form id="gate-form" autocomplete="off">
+                <input
+                    type="text"
+                    class="gate-input"
+                    id="password-input"
+                    placeholder="Speak, friend, and enter..."
+                    aria-label="Password"
+                    spellcheck="false"
+                >
+                <p class="gate-error" id="gate-error">The eye behind the peephole narrows. Try again.</p>
+            </form>
+
+            <div class="deco-line">
+                <span class="deco-diamond"></span>
+            </div>
+
+            <p class="gate-hint">Some doors only open with the right words.</p>
+        </div>
+    </div>
+
+    <script src="js/gate.js"></script>
+</body>
+</html>
