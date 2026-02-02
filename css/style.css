@@ -491,6 +491,92 @@ a:hover {
     transition: var(--transition-fast);
 }
 
+/* ─── Dropdown Navigation ───────────────────────────────────────────────── */
+.nav-links > li {
+    position: relative;
+}
+
+.nav-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 200px;
+    background: var(--black-deep);
+    border: 1px solid var(--smoke);
+    padding: var(--space-sm) 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-fast);
+    z-index: 101;
+    margin-top: var(--space-sm);
+}
+
+.nav-dropdown::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: var(--black-deep);
+    border-left: 1px solid var(--smoke);
+    border-top: 1px solid var(--smoke);
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.nav-links > li:hover .nav-dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-dropdown a {
+    display: block;
+    padding: var(--space-sm) var(--space-md);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    border-bottom: none;
+}
+
+.nav-dropdown a::after {
+    display: none;
+}
+
+.nav-dropdown a:hover {
+    background: var(--charcoal);
+    color: var(--gold);
+}
+
+/* Dropdown columns for many items */
+.nav-dropdown.multi-column {
+    min-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: var(--space-md);
+}
+
+.nav-dropdown-section {
+    padding: var(--space-sm);
+}
+
+.nav-dropdown-section h4 {
+    font-family: var(--font-display);
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: var(--space-sm);
+    padding-bottom: var(--space-xs);
+    border-bottom: 1px solid var(--smoke);
+}
+
+.nav-dropdown-section a {
+    padding: var(--space-xs) 0;
+    font-size: 0.65rem;
+}
+
 /* ─── Page Layout ───────────────────────────────────────────────────────── */
 .page-container {
     min-height: 100vh;
