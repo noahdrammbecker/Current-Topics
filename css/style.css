@@ -733,6 +733,8 @@ a:hover {
     text-align: center;
     position: relative;
     transition: all var(--transition-medium);
+    opacity: 1 !important;
+    transform: none !important;
 }
 
 .spirit-card::before {
@@ -803,6 +805,8 @@ a:hover {
     padding: var(--space-xl);
     position: relative;
     transition: all var(--transition-medium);
+    opacity: 1 !important;
+    transform: none !important;
 }
 
 .cocktail-card:hover {
