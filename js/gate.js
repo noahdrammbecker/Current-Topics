@@ -1,12 +1,12 @@
 /**
  * The Gilded Goose - Password Gate
- * "Gilded, not Gold."
+ * "Gilded not Gold."
  */
 
 (function() {
     'use strict';
 
-    const PASSWORD = 'gilded, not gold.';
+    const PASSWORD = 'gilded not gold.';
     const STORAGE_KEY = 'gilded_goose_admitted';
 
     // Check if already admitted
@@ -21,10 +21,8 @@
 
     // Alternative accepted passwords for flexibility
     const acceptedPasswords = [
-        'gilded, not gold.',
-        'gilded, not gold',
-        'gilded not gold',
         'gilded not gold.',
+        'gilded not gold',
     ];
 
     form.addEventListener('submit', function(e) {
