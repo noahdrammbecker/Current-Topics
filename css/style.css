@@ -787,11 +787,31 @@ a:hover {
     gap: var(--space-xl);
 }
 
+/* Cocktail Grid Layout */
+.cocktail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: var(--space-xl);
+}
+
+@media (max-width: 768px) {
+    .cocktail-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .cocktail-card {
-    background: var(--charcoal);
-    border: 1px solid var(--smoke);
+    background: linear-gradient(135deg, var(--charcoal) 0%, var(--black-soft) 100%);
+    border: 1px solid var(--gold-dark);
     padding: var(--space-xl);
     position: relative;
+    transition: all var(--transition-medium);
+}
+
+.cocktail-card:hover {
+    border-color: var(--gold);
+    box-shadow: 0 0 20px rgba(201, 169, 89, 0.1);
+    transform: translateY(-2px);
 }
 
 .cocktail-card::before {
@@ -854,15 +874,20 @@ a:hover {
 
 .cocktail-ingredients {
     margin-bottom: var(--space-lg);
+    background: rgba(0, 0, 0, 0.2);
+    padding: var(--space-md);
+    border-left: 2px solid var(--gold);
 }
 
 .cocktail-ingredients h4 {
     font-family: var(--font-display);
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--emerald-light);
+    color: var(--gold);
     margin-bottom: var(--space-md);
+    padding-bottom: var(--space-sm);
+    border-bottom: 1px solid var(--gold-dark);
 }
 
 .cocktail-ingredients ul {
@@ -871,10 +896,11 @@ a:hover {
 
 .cocktail-ingredients li {
     padding: var(--space-sm) 0;
-    border-bottom: 1px solid var(--charcoal-light);
+    border-bottom: 1px solid rgba(201, 169, 89, 0.2);
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    gap: var(--space-md);
 }
 
 .cocktail-ingredients li:last-child {
@@ -883,11 +909,14 @@ a:hover {
 
 .ingredient-name {
     color: var(--cream);
+    font-weight: 500;
 }
 
 .ingredient-amount {
     color: var(--gold-light);
     font-style: italic;
+    font-weight: 500;
+    white-space: nowrap;
 }
 
 .ingredient-brand {
@@ -897,26 +926,37 @@ a:hover {
     margin-top: 2px;
 }
 
+.cocktail-instructions {
+    background: rgba(0, 0, 0, 0.2);
+    padding: var(--space-md);
+    border-left: 2px solid var(--emerald);
+}
+
 .cocktail-instructions h4 {
     font-family: var(--font-display);
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--emerald-light);
     margin-bottom: var(--space-md);
+    padding-bottom: var(--space-sm);
+    border-bottom: 1px solid var(--emerald-dark);
 }
 
 .cocktail-instructions ol {
     padding-left: var(--space-lg);
+    color: var(--cream-dark);
 }
 
 .cocktail-instructions li {
     margin-bottom: var(--space-sm);
     padding-left: var(--space-sm);
+    line-height: 1.6;
 }
 
 .cocktail-instructions li::marker {
     color: var(--gold);
+    font-weight: bold;
 }
 
 .cocktail-notes {
