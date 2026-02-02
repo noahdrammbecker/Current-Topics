@@ -201,6 +201,99 @@ a:hover {
     border-top: none;
 }
 
+/* ─── Logo Styling ──────────────────────────────────────────────────────── */
+.logo {
+    display: inline-block;
+    transform: rotate(-45deg);
+    transition: transform var(--transition-medium);
+}
+
+.logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.logo:hover {
+    transform: rotate(-45deg) scale(1.05);
+}
+
+/* Logo sizes */
+.logo-sm {
+    width: 40px;
+    height: 40px;
+}
+
+.logo-md {
+    width: 80px;
+    height: 80px;
+}
+
+.logo-lg {
+    width: 120px;
+    height: 120px;
+}
+
+.logo-xl {
+    width: 180px;
+    height: 180px;
+}
+
+/* Navigation logo */
+.nav-logo-img {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.nav-logo-img .logo {
+    width: 45px;
+    height: 45px;
+}
+
+.nav-logo-img span {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+}
+
+/* Gate logo */
+.gate-logo {
+    margin-bottom: var(--space-lg);
+}
+
+.gate-logo .logo {
+    width: 100px;
+    height: 100px;
+}
+
+/* Hero logo */
+.hero-logo {
+    margin-bottom: var(--space-lg);
+}
+
+.hero-logo .logo {
+    width: 150px;
+    height: 150px;
+}
+
+/* Footer logo */
+.footer-logo-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--space-md);
+}
+
+.footer-logo-img .logo {
+    width: 60px;
+    height: 60px;
+}
+    border-left: none;
+    border-top: none;
+}
+
 /* ─── Password Gate Styling ─────────────────────────────────────────────── */
 .gate-container {
     min-height: 100vh;
