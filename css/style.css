@@ -984,6 +984,8 @@ a:hover {
     display: grid;
     grid-template-columns: 120px 1fr;
     gap: var(--space-lg);
+    opacity: 1 !important;
+    transform: none !important;
 }
 
 .event-date {
@@ -1064,6 +1066,8 @@ a:hover {
     overflow: hidden;
     cursor: pointer;
     transition: all var(--transition-medium);
+    opacity: 1 !important;
+    transform: none !important;
 }
 
 .gallery-item:hover {
