@@ -646,6 +646,7 @@ a:hover {
 
 .hero h1 {
     font-family: var(--font-logo);
+    font-weight: normal;
     margin-bottom: var(--space-md);
     text-shadow: 0 0 40px rgba(201, 169, 89, 0.3);
 }
