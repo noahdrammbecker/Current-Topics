@@ -629,10 +629,31 @@ a:hover {
     background:
         radial-gradient(ellipse at center top, rgba(30, 132, 73, 0.1) 0%, transparent 50%),
         radial-gradient(ellipse at center, var(--charcoal) 0%, var(--black-deep) 70%);
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 500px;
+    height: 500px;
+    background-image: url('../images/GildedGooseDiamond.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.04;
+    filter: grayscale(100%);
+    pointer-events: none;
+    z-index: 0;
 }
 
 .hero-content {
     max-width: 800px;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-tagline {
