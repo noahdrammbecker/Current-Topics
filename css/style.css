@@ -662,13 +662,13 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     background-image: url('../images/GildedGooseDiamond.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.08;
+    opacity: 0.12;
     filter: grayscale(100%);
     pointer-events: none;
     z-index: 0;
