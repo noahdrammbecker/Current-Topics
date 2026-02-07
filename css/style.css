@@ -1321,6 +1321,20 @@ a:hover {
     color: var(--smoke);
 }
 
+.footer-social {
+    display: inline-block;
+    margin-top: var(--space-sm);
+    font-size: 0.875rem;
+    color: var(--smoke);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: color var(--transition-fast);
+}
+
+.footer-social:hover {
+    color: var(--gold);
+}
+
 /* ─── Utility Classes ───────────────────────────────────────────────────── */
 .text-center { text-align: center; }
 .text-gold { color: var(--gold); }
