@@ -77,6 +77,21 @@
     // Gallery images will open in a lightbox when clicked
     // To be implemented when actual images are added
 
+    // ─── Secret Recipe Password ─────────────────────────────────────────────
+    const secretInput = document.getElementById('secretInput');
+    const secretOverlay = document.getElementById('secretOverlay');
+    const secretContent = document.getElementById('secretContent');
+
+    if (secretInput && secretOverlay && secretContent) {
+        secretInput.addEventListener('input', function() {
+            const password = this.value.toLowerCase().trim();
+            if (password === 'wilson v mason' || password === 'wilson vs mason') {
+                secretContent.classList.add('unlocked');
+                secretOverlay.classList.add('hidden');
+            }
+        });
+    }
+
     // ─── Console Easter Egg ──────────────────────────────────────────────────
     console.log('%c🪿 The Gilded Goose', 'color: #c9a959; font-size: 24px; font-weight: bold;');
     console.log('%cDael City, 1932', 'color: #27ae60; font-style: italic;');

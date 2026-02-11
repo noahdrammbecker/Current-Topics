@@ -67,32 +67,41 @@
         <section class="page-content">
             <div class="cocktails-list">
 
-                <article class="cocktail-card cocktail-featured">
-                    <h2 class="cocktail-name">The Gilded Goose</h2>
-                    <p class="cocktail-tagline">Our house cocktail. A flight of geese in gold leaf—our creation, our signature.</p>
-                    <div class="cocktail-ingredients">
-                        <h4>Ingredients</h4>
-                        <ul>
-                            <li><span class="ingredient-name">Plymouth Gin</span><span class="ingredient-amount">2 ½ oz</span></li>
-                            <li><span class="ingredient-name">Lemon Juice</span><span class="ingredient-amount">¾ oz</span></li>
-                            <li><span class="ingredient-name">Honey Syrup</span><span class="ingredient-amount">1 oz</span></li>
-                            <li><span class="ingredient-name">Egg White (of exceptional quality)</span><span class="ingredient-amount">1</span></li>
-                            <li><span class="ingredient-name">Angostura Bitters</span><span class="ingredient-amount">garnish</span></li>
-                            <li><span class="ingredient-name">Gold Leaf</span><span class="ingredient-amount">garnish</span></li>
-                        </ul>
+                <div class="secret-recipe-container">
+                    <div class="secret-recipe-overlay" id="secretOverlay">
+                        <p class="secret-prompt">This recipe is for members only.</p>
+                        <input type="text" class="secret-input" id="secretInput" placeholder="Enter the password...">
+                        <p class="secret-hint">Who tends the bar?</p>
                     </div>
-                    <div class="cocktail-instructions">
-                        <h4>Method</h4>
-                        <ol>
-                            <li>Add all ingredients into a boston shaker with ice and shake.</li>
-                            <li>Pour the contents into a large coupe.</li>
-                            <li>Allow the foam to settle out.</li>
-                            <li>Garnish with flat lines of Angostura bitters in a V pattern.</li>
-                            <li>Run a toothpick through each line to create a V of geese.</li>
-                            <li>Add a small amount of gold leaf to the center, and serve.</li>
-                        </ol>
+                    <div class="secret-recipe-content" id="secretContent">
+                        <article class="cocktail-card cocktail-featured">
+                            <h2 class="cocktail-name">The Gilded Goose</h2>
+                            <p class="cocktail-tagline">Our house cocktail. A flight of geese in gold leaf—our creation, our signature.</p>
+                            <div class="cocktail-ingredients">
+                                <h4>Ingredients</h4>
+                                <ul>
+                                    <li><span class="ingredient-name">Plymouth Gin</span><span class="ingredient-amount">2 ½ oz</span></li>
+                                    <li><span class="ingredient-name">Lemon Juice</span><span class="ingredient-amount">¾ oz</span></li>
+                                    <li><span class="ingredient-name">Honey Syrup</span><span class="ingredient-amount">1 oz</span></li>
+                                    <li><span class="ingredient-name">Egg White (of exceptional quality)</span><span class="ingredient-amount">1</span></li>
+                                    <li><span class="ingredient-name">Angostura Bitters</span><span class="ingredient-amount">garnish</span></li>
+                                    <li><span class="ingredient-name">Gold Leaf</span><span class="ingredient-amount">garnish</span></li>
+                                </ul>
+                            </div>
+                            <div class="cocktail-instructions">
+                                <h4>Method</h4>
+                                <ol>
+                                    <li>Add all ingredients into a boston shaker with ice and shake.</li>
+                                    <li>Pour the contents into a large coupe.</li>
+                                    <li>Allow the foam to settle out.</li>
+                                    <li>Garnish with flat lines of Angostura bitters in a V pattern.</li>
+                                    <li>Run a toothpick through each line to create a V of geese.</li>
+                                    <li>Add a small amount of gold leaf to the center, and serve.</li>
+                                </ol>
+                            </div>
+                        </article>
                     </div>
-                </article>
+                </div>
 
                 <article class="cocktail-card">
                     <h2 class="cocktail-name">Martini</h2>

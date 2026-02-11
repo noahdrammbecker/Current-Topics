@@ -1335,6 +1335,81 @@ a:hover {
     color: var(--gold);
 }
 
+/* ─── Secret Recipe ────────────────────────────────────────────────────── */
+.secret-recipe-container {
+    position: relative;
+}
+
+.secret-recipe-content {
+    filter: blur(8px);
+    user-select: none;
+    pointer-events: none;
+    transition: filter 0.5s ease;
+}
+
+.secret-recipe-content.unlocked {
+    filter: none;
+    user-select: auto;
+    pointer-events: auto;
+}
+
+.secret-recipe-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.3);
+    transition: opacity 0.5s ease;
+}
+
+.secret-recipe-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.secret-prompt {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    color: var(--gold);
+    margin-bottom: var(--space-md);
+    text-align: center;
+}
+
+.secret-input {
+    background: var(--black-soft);
+    border: 1px solid var(--gold-dark);
+    color: var(--cream);
+    padding: var(--space-sm) var(--space-md);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    text-align: center;
+    width: 250px;
+    max-width: 80%;
+}
+
+.secret-input::placeholder {
+    color: var(--smoke);
+    font-style: italic;
+}
+
+.secret-input:focus {
+    outline: none;
+    border-color: var(--gold);
+}
+
+.secret-hint {
+    font-size: 0.875rem;
+    color: var(--smoke);
+    font-style: italic;
+    margin-top: var(--space-sm);
+}
+
 /* ─── Utility Classes ───────────────────────────────────────────────────── */
 .text-center { text-align: center; }
 .text-gold { color: var(--gold); }
