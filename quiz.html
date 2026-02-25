@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Should You Drink? | The Gilded Goose</title>
+    <link rel="stylesheet" href="css/style.css?v=3">
+    <meta name="description" content="Let The Gilded Goose choose your cocktail. A few questions, one perfect drink.">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="home.html" class="nav-logo-img">
+                <div class="logo logo-sm">
+                    <img src="images/GildedGooseDiamond.png" alt="The Gilded Goose">
+                </div>
+                <span>The Gilded Goose</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li>
+                    <a href="cocktails/index.html">Cocktails</a>
+                    <ul class="nav-dropdown multi-column">
+                        <div class="nav-dropdown-section">
+                            <h4>Spirits</h4>
+                            <a href="cocktails/gin.html">Gin</a>
+                            <a href="cocktails/whiskey.html">Whiskey & Bourbon</a>
+                            <a href="cocktails/vodka.html">Vodka</a>
+                            <a href="cocktails/rum.html">Rum</a>
+                            <a href="cocktails/tequila.html">Tequila & Mezcal</a>
+                            <a href="cocktails/brandy.html">Brandy & Cognac</a>
+                        </div>
+                        <div class="nav-dropdown-section">
+                            <h4>More</h4>
+                            <a href="cocktails/scotch.html">Scotch</a>
+                            <a href="cocktails/pisco.html">Pisco & Cachaça</a>
+                            <a href="cocktails/absinthe.html">Absinthe</a>
+                            <a href="cocktails/bubbly.html">Bubbly</a>
+                            <a href="cocktails/cream.html">Cream & Dessert</a>
+                            <a href="cocktails/index.html">View All →</a>
+                        </div>
+                    </ul>
+                </li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Find Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page-container">
+        <header class="page-header">
+            <h1>What Should You Drink?</h1>
+            <div class="deco-line">
+                <span class="deco-diamond"></span>
+            </div>
+            <p class="page-subtitle">Answer a few questions. Mason and Wilson will handle the rest.</p>
+        </header>
+
+        <section class="page-content">
+            <div class="quiz-container" id="quizContainer">
+
+                <div class="quiz-step active" data-step="1">
+                    <p class="quiz-question">What brings you to The Goose tonight?</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-tags="strong,spirit-forward">I need something strong</button>
+                        <button class="quiz-option" data-tags="sweet,bubbly,light">I'm celebrating</button>
+                        <button class="quiz-option" data-tags="refreshing,citrus,light">Something refreshing</button>
+                        <button class="quiz-option" data-tags="bitter,herbal,complex">Something with depth</button>
+                        <button class="quiz-option" data-tags="surprise">Surprise me</button>
+                    </div>
+                </div>
+
+                <div class="quiz-step" data-step="2">
+                    <p class="quiz-question">How do you like your drinks?</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-tags="spirit-forward,classic">Strong and honest</button>
+                        <button class="quiz-option" data-tags="sweet,fruity">Sweet and smooth</button>
+                        <button class="quiz-option" data-tags="sour,citrus">Tart and bright</button>
+                        <button class="quiz-option" data-tags="bitter,herbal">Bitter and complex</button>
+                    </div>
+                </div>
+
+                <div class="quiz-step" data-step="3">
+                    <p class="quiz-question">Pick a flavor.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-tags="citrus,bright">Citrus &amp; sunshine</button>
+                        <button class="quiz-option" data-tags="herbal,floral">Herbs &amp; mystery</button>
+                        <button class="quiz-option" data-tags="smoky,coffee,chocolate">Dark &amp; rich</button>
+                        <button class="quiz-option" data-tags="tropical,fruity">Fruit &amp; tropics</button>
+                    </div>
+                </div>
+
+                <div class="quiz-step" data-step="4">
+                    <p class="quiz-question">And the glass?</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-tags="clean,neat">Clean and crisp</button>
+                        <button class="quiz-option" data-tags="foam,egg-white">Silky with foam</button>
+                        <button class="quiz-option" data-tags="creamy,dessert">Rich and creamy</button>
+                        <button class="quiz-option" data-tags="bubbly,sparkling">Something bubbly</button>
+                    </div>
+                </div>
+
+                <div class="quiz-result" id="quizResult">
+                    <p class="quiz-result-intro">Mason slides a glass across the bar.</p>
+                    <div class="deco-line"><span class="deco-diamond"></span></div>
+                    <h2 class="quiz-result-name" id="resultName"></h2>
+                    <p class="quiz-result-tagline" id="resultTagline"></p>
+                    <div class="quiz-result-details" id="resultDetails"></div>
+                    <p class="quiz-result-page" id="resultPage"></p>
+                    <button class="quiz-restart" id="quizRestart">Try again</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-logo-img">
+            <div class="logo logo-md">
+                <img src="images/GildedGooseDiamond.png" alt="The Gilded Goose">
+            </div>
+        </div>
+        <p class="footer-logo">The Gilded Goose</p>
+        <p class="footer-tagline">"The finest establishment you've never heard of."</p>
+        <ul class="footer-nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="cocktails/index.html">Cocktails</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Find Us</a></li>
+        </ul>
+        <p class="footer-year">Dael City &bull; 1932</p>
+        <a href="https://www.instagram.com/the_gilded_goose/" class="footer-social" target="_blank" rel="noopener">Instagram</a>
+    </footer>
+
+    <script src="js/main.js?v=3"></script>
+    <script src="js/quiz.js?v=1"></script>
+</body>
+</html>

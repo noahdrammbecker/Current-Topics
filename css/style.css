@@ -1410,6 +1410,121 @@ a:hover {
     margin-top: var(--space-sm);
 }
 
+/* ─── Cocktail Quiz ────────────────────────────────────────────────────── */
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.quiz-step {
+    display: none;
+}
+
+.quiz-step.active {
+    display: block;
+    animation: quizFadeIn 0.4s ease;
+}
+
+@keyframes quizFadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.quiz-question {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--gold);
+    margin-bottom: var(--space-xl);
+    letter-spacing: 0.02em;
+}
+
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.quiz-option {
+    display: block;
+    width: 100%;
+    padding: var(--space-md) var(--space-lg);
+    background: transparent;
+    border: 1px solid var(--gold-dark);
+    color: var(--cream);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    letter-spacing: 0.03em;
+}
+
+.quiz-option:hover {
+    background: rgba(201, 169, 89, 0.1);
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+.quiz-result {
+    display: none;
+}
+
+.quiz-result.active {
+    display: block;
+    animation: quizFadeIn 0.6s ease;
+}
+
+.quiz-result-intro {
+    font-style: italic;
+    color: var(--cream-dark);
+    font-size: 1.1rem;
+    margin-bottom: var(--space-lg);
+}
+
+.quiz-result-name {
+    font-family: var(--font-display);
+    font-size: 2.25rem;
+    color: var(--gold);
+    margin: var(--space-lg) 0 var(--space-sm);
+}
+
+.quiz-result-tagline {
+    font-style: italic;
+    color: var(--cream-dark);
+    margin-bottom: var(--space-xl);
+}
+
+.quiz-result-page a {
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    transition: color var(--transition-fast);
+}
+
+.quiz-result-page a:hover {
+    color: var(--cream);
+}
+
+.quiz-restart {
+    display: inline-block;
+    margin-top: var(--space-xl);
+    padding: var(--space-sm) var(--space-lg);
+    background: transparent;
+    border: 1px solid var(--smoke);
+    color: var(--smoke);
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    transition: all var(--transition-fast);
+}
+
+.quiz-restart:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
 /* ─── Utility Classes ───────────────────────────────────────────────────── */
 .text-center { text-align: center; }
 .text-gold { color: var(--gold); }
